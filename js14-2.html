@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="a"></p>
+    <script>
+        const f = ["바나나", "오렌지", "사과", "망고"];
+
+        let txt = "<ul>";
+        f.forEach(myfunction);
+        txt += "</ul>";
+        document.getElementById("a").innerHTML = txt;
+
+        function myfunction(v, index){
+            txt += "<li>"+index+" "+v+"</li>";
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="a"></p>
+    <script>
+        const arr1 = ["바나나", "딸기", "배", "사과"];
+        let fL = arr1.length;
+
+        let txt = "<ul>";
+        for(let i=0; i<fL; i++){
+            txt += "<li>"+arr1[i]+"</li>"
+        }
+        
+        txt += "</ul>";
+
+        document.getElementById("a").innerHTML=txt;
+
+    </script>
+</body>
+</html>

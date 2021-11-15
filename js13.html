@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function add(){
+            console.log("add호출") // 코드오류가 없는지 확인가능
+
+            let n1 = document.getElementById("n1").value;
+            let n2 = document.getElementById("n2").value;
+
+            let r = n1 + n2;
+            document.getElementById("rid").value = r;
+        }
+    </script>
+</head>
+<body>
+    <p id=a1></p>
+    <p id=b1></p>
+    <p id=c1></p>
+    <p id=d1></p>
+    <script>
+        document.getElementById("a1").innerHTML="1234567"+
+        "8910"
+        document.getElementById("a1").innerHTML="1234567" // 마지막 구문이 출력
+
+        let b = "abc";              // string
+        let c = new String("abc");  // object
+        document.getElementById("b1").innerHTML=typeof b + "<br>" + typeof c;
+
+        let d = "ddd";
+        let e = "eee";
+        let f = d.concat(" ",e," 결합메서드 concat");
+        document.getElementById("c1").innerHTML=f;
+    </script>
+    <form>
+        <input type="text" id="n1">+<input type="text" id="n2">=<input type="text" id="rid"><br>
+        <input type="button" value="결과" onclick="add();"
+    </form>
+</body>
+</html>
