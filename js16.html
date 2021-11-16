@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="a"></p>
+    <p id="b"></p>
+    <p id="c"></p>
+    <script>
+        const person = {fname : "홍", lname : "길동" , age : 25};
+        console.log(typeof person);
+        let t = "";
+        for(let x in person){
+            t += person[x] + " ";
+        }
+        document.getElementById("a").innerHTML=t;
+
+        let lang = "JavaScript";
+        let t2 = "";
+        for(let x of lang){
+            t2 += x + " ";
+        }
+        document.getElementById("b").innerHTML=t2;
+    </script>
+</body>
+</html>

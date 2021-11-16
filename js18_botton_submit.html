@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        // submit 클릭시 호출되는 함수는 boolean 반환값이 필요함
+        function fff(){
+            let bbb = document.getElementById("유저idid").value;
+            let ccc = document.getElementById("유저pwid").value;
+            if(bbb==""){
+                alert("아이디입력해");
+                return false;
+            }else if(ccc == ""){
+                alert("비번입력해");
+                return false;
+            } return true; } 
+        function fff2(){
+            let bbb2 = document.getElementById("유저idid").value;
+            let ccc2 = document.getElementById("유저pwid").value;
+            if(bbb2==""){
+                alert("아이디입력해");
+                return;
+            }else if(ccc2 == ""){
+                alert("비번입력해");
+                return;
+            }}
+    </script>
+</head>
+<body>
+    <form name="mimi" id="a" onsubmit="return fff();">
+        아이디 : <input type="text" name="유저idna" id="유저idid"><br>
+        비밀번호 : <input type="password" name="유저pwna" id="유저pwid"><br>
+        <input type="submit" value="로그인 submit"><br>
+        <input type="button" value="로그인 botton" onclick="fff2()"><br>
+    </form>
+</body>
+</html>
